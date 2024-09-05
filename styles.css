@@ -1,0 +1,161 @@
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #1e1e1e;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100vh;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.left-section {
+    flex: 1;
+    color: #dcdcdc;
+    padding-left: 50px;
+}
+
+.right-section {
+    flex: 1;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+h1 {
+    font-size: 4rem;
+    margin: 0;
+    color: #dcdcdc;
+}
+
+h2 {
+    color: #FFE400;
+    font-size: 2.5rem;
+}
+
+.last-name {
+    color: white;
+}
+
+.underscore {
+    color: #b5e48c;
+}
+
+.arrow {
+    color: #666;
+}
+
+.description {
+    font-size: 1rem;
+    color: #a8a8a8;
+    max-width: 600px;
+    margin-bottom: 40px;
+    line-height: 1.65;
+}
+
+.code-snippet {
+    background-color: #252526;
+    padding: 15px;
+    /* Balanced padding to give enough space without excess */
+    border-radius: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    color: #dcdcdc;
+    display: block;
+    /* Ensure the block stays within its container */
+}
+
+code {
+    font-size: 1rem;
+    line-height: 1.5;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.keyword {
+    color: #c586c0;
+}
+
+.code-snippet pre {
+    margin: 0;
+    white-space: pre;
+    /* Keeps the code structure intact */
+}
+
+.code-snippet span.line {
+    padding-left: 13px;
+}
+
+.code-snippet span.token {
+    color: #FFE400
+}
+
+/* Highlight specific lines with a blue left border and background */
+.code-snippet span.highlight {
+    background-color: #2d2d2d;
+    display: block;
+    /* Set block display for each line */
+    border-left: 4px solid #264f78;
+    padding-left: 10px;
+    /* Adjust padding for consistency */
+    box-sizing: border-box;
+    /* Include padding and border in the element's width */
+}
+
+.profile-pic {
+    border-radius: 50%;
+    max-width: 500px;
+    object-fit: cover;
+    z-index: 1;
+    filter: drop-shadow(8px -5px 0 black) drop-shadow(0px 15px 0 black);
+}
+
+.absolute-column {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    z-index: 1;
+    background-color: #FFE400;
+}
+
+.typed-cursor {
+
+    color: #FFE400;
+    font-size: 2.5rem;
+}
+
+
+.animate-blink {
+    animation: blink-caret 1.5s steps(17) infinite;
+    color: #FFE400;
+}
+
+.-translate-y-2 {
+    --tw-translate-y: -0.5rem;
+}
+
+
+.-translate-y-2,
+.skew-x-6 {
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+}
+
+@keyframes blink-caret {
+    50% {
+        opacity: 0
+    }
+}
+
+.typed-container {
+    display: flex;
+    align-items: center;
+    min-height: 50px;
+    margin: 10px 0;
+}
